@@ -30,11 +30,12 @@ public class Main {
         do {
             try{    
                  semaforo = false;
-                char  letra = SCN.nextLine().charAt(0);
-               
+                 System.out.print("Introduce un caracter: ");
+                char  caracter = SCN.nextLine().charAt(0);
+                System.out.println("El caracter introducido es: "+caracter);
             }catch (Exception e){
                 semaforo = true;
-                System.out.println("Error");                
+                System.out.print("Error has cometido un error vuelve a intentarlo");                
             }
         } while (semaforo);
         
